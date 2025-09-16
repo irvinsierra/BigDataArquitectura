@@ -7,4 +7,5 @@ RUN rm /opt/hadoop-2.7.4/share/hadoop/common/lib/avro-1.7.4.jar
 COPY jdbc/org.json-20120521.jar /opt/hadoop-2.7.4/share/hadoop/common/lib
 COPY jdbc/avro-1.8.1.jar /opt/hadoop-2.7.4/share/hadoop/common/lib
 COPY jdbc/org.json-20120521.jar /usr/local/sqoop/lib/
+COPY irvin.sql /docker-entrypoint-initdb.d/
 
