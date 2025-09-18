@@ -70,10 +70,11 @@ sqoop import \
 
 
 sqoop import \
---connect "jdbc:mysql://10.0.12.228:3310/retaild_db" \
+--connect "jdbc:mysql://mysql:3306/db_irvin" \
 --username=root \
 --password=root \
---table categories \
+--table student_mat \
+--split-by age \
 --as-textfile \
---target-dir=/user/datapath/datasets/categories\
+--target-dir=/user/raw/mysql/bd_irvin/t_student_mat \
 --delete-target-dir > /tmp/log_customer.log
